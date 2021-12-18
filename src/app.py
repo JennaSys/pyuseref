@@ -4,25 +4,25 @@ from pyreact import Form, Label, Input, Div, Button
 
 @react_component
 def App():
-    name_ref = useRef()
-    mail_ref = useRef()
+    nameRef = useRef()
+    mailRef = useRef()
 
-    print(name_ref)
+    print(nameRef)
 
     def handleSubmit(event):
         event.preventDefault()
-        print(name_ref['current']['value'])
-        print(mail_ref['current']['value'])
+        print(nameRef['current']['value'])
+        print(mailRef['current']['value'])
 
-    useEffect(lambda: print(name_ref), [])
+    useEffect(lambda: print(nameRef), [])
 
     return Div({'className': 'app'},
                Form({'onSubmit': handleSubmit},
                     Label({'htmlFor': 'name'}, "Name"),
-                    Input({'id': 'name', 'type': 'text', 'ref': name_ref}),
+                    Input({'id': 'name', 'type': 'text', 'ref': nameRef}),
 
                     Label({'htmlFor': 'email'}, "Email"),
-                    Input({'id': 'email', 'type': 'text', 'ref': mail_ref}),
+                    Input({'id': 'email', 'type': 'text', 'ref': mailRef}),
 
                     Button(None, "Submit"),
                     )
