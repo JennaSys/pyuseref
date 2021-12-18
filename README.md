@@ -1,5 +1,5 @@
 ## React to Python
-### Code for Python React version of useRef Tutorial at:  
+### Python React version of useRef Tutorial at:  
 https://dev.to/ziratsu/the-useref-hook-in-react-3h98
 
 - **app.py**: useRef demo
