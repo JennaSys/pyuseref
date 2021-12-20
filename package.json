@@ -1,25 +1,21 @@
 {
-  "name": "repo_useref",
+  "name": "pyuseref",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "NODE_ENV=development parcel --log-level 4 src/index.html --no-cache --out-dir dist/dev",
-    "build": "NODE_ENV=production parcel --log-level 4 build src/index.html --no-source-maps --out-dir dist/prod --no-hmr --public-url ./",
-    "dev": "node dev-server.js",
-    "version": "echo \"version = '$npm_package_version'\" > ./src/version.py;git add ./src/version.py",
+    "start": "NODE_ENV=development parcel --no-cache --log-level 4 src/index.html --out-dir dist/dev",
+    "build": "NODE_ENV=production parcel --no-cache --log-level 4 build src/index.html --no-source-maps --out-dir dist/prod",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JennaSys/useref.git"
+    "url": "git+https://github.com/JennaSys/pyuseref.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "express": "^4.17.1",
-    "http-proxy-middleware": "^1.0.6",
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-transcrypt": "^1.0.20"
   },

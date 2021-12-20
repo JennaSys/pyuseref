@@ -8,7 +8,18 @@ https://dev.to/ziratsu/the-useref-hook-in-react-3h98
 
 - **pyreact.py**: React wrapper functions
 
-Change `script src` in **index.html** to try different modules
 
-Run with:  
-$ `npm run dev`
+
+### Setup:  
+$ `python3.9 -m venv venv`  
+$ `. ./venv/bin/activate`  
+$ `pip install -r requirements.txt`  
+$ `npm install`  
+$ `python -m patch_transcrypt_plugin`
+
+### Run with:  
+$ `npm start`
+
+
+Change `script src` in **index.html** to try different **app** modules
+
