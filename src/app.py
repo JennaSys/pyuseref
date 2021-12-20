@@ -19,10 +19,10 @@ def App():
     return Div({'className': 'app'},
                Form({'onSubmit': handleSubmit},
                     Label({'htmlFor': 'name'}, "Name"),
-                    Input({'id': 'name', 'type': 'text', 'ref': nameRef}),
+                    Input({'ref': nameRef, 'type': 'text', 'id': 'name'}),
 
                     Label({'htmlFor': 'email'}, "Email"),
-                    Input({'id': 'email', 'type': 'text', 'ref': mailRef}),
+                    Input({'ref': mailRef, 'type': 'text', 'id': 'email'}),
 
                     Button(None, "Submit"),
                     )
