@@ -15,7 +15,6 @@ $ `python3.9 -m venv venv`
 $ `. ./venv/bin/activate`  
 $ `pip install -r requirements.txt`  
 $ `npm install`  
-$ `python -m patch_transcrypt_plugin`
 
 ### Run with:  
 $ `npm start`

@@ -2,11 +2,9 @@
   "name": "pyuseref",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "start": "NODE_ENV=development parcel --no-cache --log-level 4 src/index.html --out-dir dist/dev",
-    "build": "NODE_ENV=production parcel --no-cache --log-level 4 build src/index.html --no-source-maps --out-dir dist/prod",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "NODE_ENV=development parcel --log-level info src/index.html --dist-dir dist/dev",
+    "build": "NODE_ENV=production parcel build --log-level info --no-cache --no-source-maps src/index.html --dist-dir dist/prod"
   },
   "repository": {
     "type": "git",
@@ -15,12 +13,12 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "parcel-bundler": "^1.12.4",
-    "parcel-plugin-transcrypt": "^1.0.20"
-  },
   "dependencies": {
     "react": "^16.14.0",
     "react-dom": "^16.14.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.2.1",
+    "parcel-transformer-transcrypt": "^0.1.3"
   }
 }

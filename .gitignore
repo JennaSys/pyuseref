@@ -7,7 +7,9 @@
 venv/
 __target__/
 dist/
+.build/
 .cache/
+.parcel-cache/
 node_modules/
 __pycache__/
 
