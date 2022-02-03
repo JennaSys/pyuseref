@@ -16,7 +16,7 @@ $ `. ./venv/bin/activate`
 $ `pip install -r requirements.txt`  
 $ `npm install`  
 
-### Run with:  
+### Build and run with:  
 $ `npm start`
 
 
