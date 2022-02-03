@@ -19,6 +19,11 @@ $ `npm install`
 ### Build and run with:  
 $ `npm start`
 
+The application will be served up on Parcel's default port at:  
+`http://localhost:1234`
+
+Open the developer console in the web browser to see the output.
+
 
 Change `script src` in **index.html** to try different **app** modules
 
