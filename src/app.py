@@ -1,5 +1,5 @@
 from pyreact import useEffect, useRef, render, react_component
-from pyreact import Form, Label, Input, Div, Button
+from pyreact import Form, Label, Input, Div, Button, Br
 
 
 @react_component
@@ -18,12 +18,12 @@ def App():
 
     return Div({'className': 'app'},
                Form({'onSubmit': handleSubmit},
-                    Label({'htmlFor': 'name'}, "Name"),
+                    Label({'htmlFor': 'name'}, "Name"), Br(None),
                     Input({'ref': nameRef, 'type': 'text', 'id': 'name'}),
-
-                    Label({'htmlFor': 'email'}, "Email"),
+                    Br(None), Br(None),
+                    Label({'htmlFor': 'email'}, "Email"), Br(None),
                     Input({'ref': mailRef, 'type': 'text', 'id': 'email'}),
-
+                    Br(None), Br(None),
                     Button(None, "Submit"),
                     )
                )
