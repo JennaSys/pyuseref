@@ -34,6 +34,7 @@ Li = react_component('li')
 Button = react_component('button')
 Div = react_component('div')
 Span = react_component('span')
+Br = react_component('br')
 
 
 def render(root_component, props, container):
